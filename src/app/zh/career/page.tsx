@@ -41,7 +41,7 @@ export default function CareerZh() {
   ];
 
   return (
-    <main className="bg-white text-gray-800 antialiased font-sans overflow-x-hidden">
+    <main className="bg-white text-gray-800 antialiased font-sans">
       <Navbar lang="zh" activePath="/zh/career" />
 
       {/* Luxury Hero Section for Career */}
