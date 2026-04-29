@@ -2,6 +2,7 @@
 import { SmoothBgShader } from "@/components/ui/hero-section-with-smooth-bg-shader"
 import { TeamSection, TeamMember } from "@/components/ui/team-section-1"
 import { IconGrid, IconGridItem } from "@/components/ui/icon-set"
+import { Navbar } from "@/components/navbar"
 
 // Helper to create an icon component with consistent styling
 const IconWrapper = ({ children }: { children: React.ReactNode }) => (
@@ -40,33 +41,8 @@ export default function CareerZh() {
   ];
 
   return (
-    <main className="bg-white text-gray-800 antialiased font-sans">
-      {/* Navbar */}
-      <nav className="fixed w-full z-50 top-0 py-4 px-8 flex justify-between items-center text-white bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-sm shadow-black/5">
-          <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="NovaHaus Logo" className="h-12 object-contain" />
-          </div>
-          {/* Desktop Menu */}
-          <div className="hidden md:flex gap-8 text-sm font-medium">
-              <a href="/zh" className="hover:text-[#ead7c7]">首页</a>
-              <a href="/zh/career" className="hover:text-[#ead7c7]">招贤纳士</a>
-          </div>
-          <div className="hidden md:block">
-              <a href="/career">
-                  <button className="bg-white text-[#1e1e1e] px-4 py-2 rounded-full text-sm font-bold flex items-center justify-center hover:bg-[#ead7c7] transition min-w-[60px]">
-                      🇨🇳 / 🇬🇧
-                  </button>
-              </a>
-          </div>
-          {/* Mobile Burger Menu */}
-          <div className="md:hidden flex items-center">
-              <button className="text-white hover:text-[#ead7c7] transition focus:outline-none">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-              </button>
-          </div>
-      </nav>
+    <main className="bg-white text-gray-800 antialiased font-sans overflow-x-hidden">
+      <Navbar lang="zh" activePath="/zh/career" />
 
       {/* Luxury Hero Section for Career */}
       <SmoothBgShader 
