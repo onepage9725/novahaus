@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaHaus Property Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        theme: '#ead7c7',
+                        btn: '#34a0a4',
+                        btnHover: '#2a8286',
+                        dark: '#1e1e1e'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav class="absolute w-full z-10 top-0 pt-6 px-8 flex justify-between items-center text-white">
+        <div class="flex items-center gap-2 font-bold text-xl">
+            <!-- As I don't have the explicit local path for the logo yet, I'll use text, but styled to match -->
+            <span class="tracking-widest">NOVAHAUS</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="#" class="hover:text-theme">Home</a>
+            <a href="#" class="hover:text-theme">About</a>
+            <a href="#" class="hover:text-theme">Property</a>
+            <a href="#" class="hover:text-theme">Agent</a>
+            <a href="#" class="hover:text-theme">Contact</a>
+        </div>
+        <a href="#" class="bg-white text-dark px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-theme transition">
+            Explore Property &rarr;
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[80vh] flex items-center bg-gray-900 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="House" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="relative z-10 px-8 lg:px-24 max-w-4xl text-white mt-12">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="flex -space-x-3">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80" alt="Client" class="w-10 h-10 rounded-full object-cover border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=100&q=80" alt="Client" class="w-10 h-10 rounded-full object-cover border-2 border-white">
+                    <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=100&q=80" alt="Client" class="w-10 h-10 rounded-full object-cover border-2 border-white">
+                </div>
+                <div class="text-xs">
+                    <div class="text-yellow-400">★★★★★</div>
+                    <div>Trusted by 4K+ clients</div>
+                </div>
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">NovaHaus Property Management</h1>
+            <p class="text-lg lg:text-xl font-bold mb-8 max-w-xl">Connecting Students with Quality Living</p>
+            <a href="#" class="bg-btn hover:bg-btnHover text-white px-8 py-3 rounded-full font-semibold transition inline-block">Explore Property &rarr;</a>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-8 lg:px-24">
+        <div class="flex flex-col lg:flex-row gap-12 justify-between items-start mb-16">
+            <h2 class="text-4xl lg:text-5xl font-semibold text-gray-900 max-w-lg leading-tight lg:leading-tight">About NovaHaus Property Management</h2>
+            <div class="max-w-xl">
+                <p class="text-lg text-gray-800 font-medium mb-12">Founded in 2023 by Eric Ng and Simon Chong, we provide premium, fully furnished student housing in Sunway and Subang. With over 200 satisfied residents, we go beyond accommodation to create secure, designer homes that foster academic success and personal growth.</p>
+                <div class="grid grid-cols-3 gap-8">
+                    <div><h3 class="text-3xl font-bold text-btn mb-1">+112</h3><p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Unit Already</p></div>
+                    <div><h3 class="text-3xl font-bold text-btn mb-1">+17K</h3><p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Customer</p></div>
+                    <div><h3 class="text-3xl font-bold text-btn mb-1">99%</h3><p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Satisfied</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 h-64">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&q=80" class="w-full h-full object-cover rounded-xl" alt="Property">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&q=80" class="w-full h-full object-cover rounded-xl mt-8" alt="Property">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&q=80" class="w-full h-full object-cover rounded-xl -mt-8" alt="Property">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=500&q=80" class="w-full h-full object-cover rounded-xl" alt="Property">
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-50 px-8 lg:px-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">Why choose our real<br>estate expertise</h2>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" class="rounded-2xl shadow-xl w-full" alt="Team meeting">
+            </div>
+            <div class="lg:w-1/2 space-y-8">
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 bg-theme flex-shrink-0 rounded-full flex items-center justify-center text-dark font-bold">1</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Expert Guidance</h4>
+                        <p class="text-gray-600">Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 bg-theme flex-shrink-0 rounded-full flex items-center justify-center text-dark font-bold">2</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Premium Property Selection</h4>
+                        <p class="text-gray-600">Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-12 h-12 bg-theme flex-shrink-0 rounded-full flex items-center justify-center text-dark font-bold">3</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Hassle-Free Process</h4>
+                        <p class="text-gray-600">Enjoy a streamlined student accommodation process from virtual tours to signing contracts with our dedicated support team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section with the Theme Color -->
+    <section class="py-20 px-8 lg:px-24 text-center bg-theme text-gray-900">
+        <h2 class="text-4xl font-bold mb-16">The seamless way<br>to buy property</h2>
+        
+        <div class="flex justify-center gap-12 mb-16">
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 bg-white rounded-full mb-4"></div>
+                <div class="font-medium">Discover House</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 bg-white rounded-full mb-4"></div>
+                <div class="font-medium">Schedule to Visit</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 bg-white rounded-full mb-4"></div>
+                <div class="font-medium">Hassle-Free Purchase</div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 lg:p-12 text-left max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 shadow-lg">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=500&q=80" alt="Couple" class="rounded-2xl lg:w-1/2 object-cover">
+            <div class="lg:w-1/2 flex flex-col justify-center">
+                <h3 class="text-3xl font-bold mb-4">Find the perfect house</h3>
+                <p class="text-gray-600 mb-6">Find your perfect home with personalized searches, expert guidance, and seamless viewings.</p>
+                <ul class="space-y-4 font-medium">
+                    <li class="flex items-center gap-2">✓ Handpicked homes matching your needs</li>
+                    <li class="flex items-center gap-2">✓ Expert guidance every step</li>
+                    <li class="flex items-center gap-2">✓ Seamless process</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 px-8 lg:px-24 border-t mt-20">
+        <div class="flex flex-col lg:flex-row justify-between mb-12">
+            <div>
+                <div class="text-3xl font-bold tracking-widest mb-4">NOVAHAUS</div>
+                <p class="text-sm font-light">PROPERTY MANAGEMENT</p>
+            </div>
+            <div class="flex gap-16">
+                <div>
+                    <h5 class="font-bold mb-4">LANDINGS</h5>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4">INFORMATION</h5>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">Property Details</a></li>
+                        <li><a href="#">Agent</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm text-gray-400">
+            © 2026 NovaHaus - All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-import { WhyChooseUs } from "@/components/why-choose-us"
+import { WhyChooseUsZh } from "@/components/why-choose-us-zh"
 import { SmoothBgShader } from "@/components/ui/hero-section-with-smooth-bg-shader"
 import { IconGrid, IconGridItem } from "@/components/ui/icon-set"
 
@@ -22,7 +22,7 @@ const socialIcons: IconGridItem[] = [
   },
 ];
 
-export default function Home() {
+export default function HomeZh() {
   return (
     <main className="bg-white text-gray-800 antialiased font-sans">
       {/* Navbar */}
@@ -32,11 +32,11 @@ export default function Home() {
           </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 text-sm font-medium">
-              <a href="/" className="hover:text-[#ead7c7]">Home</a>
-              <a href="/career" className="hover:text-[#ead7c7]">Career</a>
+              <a href="/zh" className="hover:text-[#ead7c7]">首页</a>
+              <a href="/career" className="hover:text-[#ead7c7]">招贤纳士</a>
           </div>
           <div className="hidden md:block">
-              <a href="/zh">
+              <a href="/">
                   <button className="bg-white text-[#1e1e1e] px-4 py-2 rounded-full text-sm font-bold flex items-center justify-center hover:bg-[#ead7c7] transition min-w-[60px]">
                       🇨🇳 / 🇬🇧
                   </button>
@@ -56,22 +56,22 @@ export default function Home() {
       <header className="relative h-[80vh] flex items-center bg-gray-900 overflow-hidden pt-20">
           <img src="/images/hero.webp" alt="House" className="absolute inset-0 w-full h-full object-cover opacity-60" />
           <div className="relative z-10 px-8 lg:px-24 max-w-4xl text-white mt-12">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">NovaHaus Property Management</h1>
-              <p className="text-lg lg:text-xl font-bold mb-8 max-w-xl">Connecting Students with Quality Living</p>
-              <a href="#available-units" className="bg-[#34a0a4] hover:bg-[#2a8286] text-white px-8 py-3 rounded-full font-semibold transition inline-block">Explore Property &rarr;</a>
+              <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">NovaHaus 物业管理</h1>
+              <p className="text-lg lg:text-xl font-bold mb-8 max-w-xl">为学生提供优质的居住体验</p>
+              <a href="#available-units" className="bg-[#34a0a4] hover:bg-[#2a8286] text-white px-8 py-3 rounded-full font-semibold transition inline-block">探索房源 &rarr;</a>
           </div>
       </header>
 
       {/* Stats Section */}
       <section className="py-20 px-8 lg:px-24 bg-[#ead7c7]">
           <div className="flex flex-col lg:flex-row gap-12 justify-between items-start mb-16">
-              <h2 className="text-4xl lg:text-5xl font-semibold text-gray-900 max-w-lg leading-tight lg:leading-tight">About NovaHaus Property Management</h2>
+              <h2 className="text-4xl lg:text-5xl font-semibold text-gray-900 max-w-lg leading-tight lg:leading-tight">关于 NovaHaus 物业管理</h2>
               <div className="max-w-xl">
-                  <p className="text-lg text-gray-800 font-medium mb-12">Founded in 2023 by Eric Ng and Simon Chong, we provide premium, fully furnished student housing in Sunway and Subang. With over 200 satisfied residents, we go beyond accommodation to create secure, designer homes that foster academic success and personal growth.</p>
+                  <p className="text-lg text-gray-800 font-medium mb-12">由 Eric Ng 和 Simon Chong 于 2023 年创立，我们在双威 (Sunway) 和梳邦 (Subang) 为广大学生提供优质且设施齐全的全装配学生公寓。凭借超过 200 名满意的住户，我们不仅只提供简单的住宿服务，更致力于为您打造安全、有设计感的家，助力学术上的成功与个人层面的成长。</p>
                   <div className="grid grid-cols-3 gap-8">
-                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">+112</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Unit Already</p></div>
-                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">+500</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Customer</p></div>
-                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">99%</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Satisfied</p></div>
+                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">+112</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">套房源</p></div>
+                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">+500</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">位客户</p></div>
+                      <div><h3 className="text-3xl font-bold text-[#34a0a4] mb-1">99%</h3><p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">满意度</p></div>
                   </div>
               </div>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* Replaced Why Choose Us Section*/}
-      <WhyChooseUs />
+      <WhyChooseUsZh />
 
       {/* Discover Available Units Section */}
       <section 
@@ -99,8 +99,8 @@ export default function Home() {
       >
           <div className="relative z-10 w-full">
               <div className="text-center mb-16">
-                  <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34a0a4] to-teal-700">Discover Available Units</h2>
-                  <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Explore our premium selection of student accommodations across prime locations in Sunway and Subang.</p>
+                  <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34a0a4] to-teal-700">探索现有房源</h2>
+                  <p className="text-gray-600 mt-4 max-w-2xl mx-auto">了解我们在双威 (Sunway) 和梳邦 (Subang) 各处黄金地段为您精选的优质租房。</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
@@ -116,9 +116,9 @@ export default function Home() {
                       </div>
                       <div className="p-6">
                           <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-[#34a0a4] transition-colors">{project.name}</h3>
-                          <p className="text-sm text-gray-500 mb-4">Premium fully furnished units ready for move-in.</p>
+                          <p className="text-sm text-gray-500 mb-4">随时拎包入住的高端配置，满足您对生活质量的需求。</p>
                           <span className="text-[#34a0a4] font-semibold flex items-center gap-1">
-                              View Details <span aria-hidden="true">&rarr;</span>
+                              查看详情 <span aria-hidden="true">&rarr;</span>
                           </span>
                       </div>
                   </a>
@@ -130,8 +130,8 @@ export default function Home() {
       {/* Our Services Section */}
       <SmoothBgShader className="py-20 px-8 lg:px-24">
           <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34a0a4] to-teal-700">Our Services</h2>
-              <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Tailored solutions to make university life stress-free for tenants, and property management effortless for landlords.</p>
+              <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34a0a4] to-teal-700">我们的服务全景</h2>
+              <p className="text-gray-600 mt-4 max-w-2xl mx-auto">专为您量身制定的解决方案，让租客在体验无忧无惧的同时，更让房东卸下管理的后顾之忧。</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <div className="bg-gray-50 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
@@ -139,9 +139,9 @@ export default function Home() {
                       <img src="/images/dbb044b8b3.jpg" alt="Tenant Services" className="w-full h-full object-cover" />
                   </div>
                   <div className="p-10 flex-grow">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4">Tenant</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4">租客</h3>
                       <p className="text-gray-600 leading-relaxed">
-                          At NovaHaus, we understand the unique needs of students. That’s why we offer fully furnished rooms in well-maintained properties with premium interior designs. Our accommodations come with added perks such as a free shuttle bus service to schools (excluding weekends), ensuring convenience and comfort for our tenants. Whether you’re new to the area or searching for a new place to call home, we help you find the perfect space to make your university life stress-free and enjoyable.
+                          在 NovaHaus 开始一段不一样的居住体验吧！我们无比理解留学生的特殊租房偏好与各种细致需求，我们在拥有高端设计的优秀物业中，配置了随时准备入住且品质优良的住宿选择。更额外提供学校往返交通便利巴士接送服务（周末除外），务求带给您便捷无负担的愉快大学生活。不用再忧虑任何事情，今天就为您安设完美的在校之 "家" 吧。
                       </p>
                   </div>
               </div>
@@ -150,16 +150,16 @@ export default function Home() {
                       <img src="/images/b3feb6c46b.jpg" alt="Landlord Services" className="w-full h-full object-cover" />
                   </div>
                   <div className="p-10 flex-grow">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4">Landlords</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4">房东</h3>
                       <p className="text-gray-600 leading-relaxed">
-                          At NovaHaus, we understand the unique needs of students. That’s why we offer fully furnished rooms in well-maintained properties with premium interior designs. Our accommodations come with added perks such as a free shuttle bus service to schools (excluding weekends), ensuring convenience and comfort for our tenants. Whether you’re new to the area or searching for a new place to call home, we help you find the perfect space to make your university life stress-free and enjoyable.
+                          还在担忧物业收租慢、环境折旧以及管理繁琐带来的焦虑吗？把这些抛给我们即可。在 NovaHaus 物业，作为房产拥有者的您将全权感受到绝对专业的长期回报收益提升计划以及有担保的按时资金流保障机制。我们会帮助打理内环境设计装修改建、把关维修进度并在找寻理想高质素学生准客户租后接管等方面，完全实现真正的“托管”自由。
                       </p>
                   </div>
               </div>
           </div>
           <div className="mt-16 text-center">
               <a href="https://wa.me/60186667116?text=Hi%2C%20I%20want%20to%20know%20more%20about%20NovaHaus%20Property%20Management%20Services." target="_blank" rel="noopener noreferrer" className="bg-[#34a0a4] hover:bg-[#2a8286] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2">
-                  Enquiry Now
+                  立即咨询
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -180,7 +180,7 @@ export default function Home() {
                           <img src="/logo.png" alt="NovaHaus Logo" className="h-16 object-contain" />
                       </div>
                       <p className="text-sm font-light text-white/80 leading-relaxed mb-10">
-                          We specialize in offering fully furnished units with premium interior designs in Sunway & Subang area, ensuring students have a comfortable and secure living space while pursuing their studies.
+                          我们专注于在双威 (Sunway) 和梳邦 (Subang) 地区提供配备优质室内设计的全包式带家具单位，确保学生在求学期间拥有一处舒适且安全的居住空间。
                       </p>
                       <div className="flex gap-4">
                           <IconGrid items={socialIcons} className="grid-cols-1" />
@@ -192,19 +192,19 @@ export default function Home() {
                   
                   {/* Links Column */}
                   <div className="lg:col-span-3">
-                      <h4 className="text-white text-xs font-bold tracking-[0.2em] uppercase mb-8">Discover Space</h4>
+                      <h4 className="text-white text-xs font-bold tracking-[0.2em] uppercase mb-8">探索空间</h4>
                       <ul className="space-y-4 text-sm font-light">
-                          <li><a href="/#available-units" className="hover:text-[#ead7c7] transition-colors duration-300">Available Unit</a></li>
-                          <li><a href="/career#work-together" className="hover:text-[#ead7c7] transition-colors duration-300">Join Our Team</a></li>
+                          <li><a href="/zh/#available-units" className="hover:text-[#ead7c7] transition-colors duration-300">可选单位</a></li>
+                          <li><a href="/zh/career#work-together" className="hover:text-[#ead7c7] transition-colors duration-300">加入团队</a></li>
                       </ul>
                   </div>
                   
                   {/* Contact / Concierge Column */}
                   <div className="lg:col-span-3">
-                      <h4 className="text-white text-xs font-bold tracking-[0.2em] uppercase mb-8">Concierge</h4>
+                      <h4 className="text-white text-xs font-bold tracking-[0.2em] uppercase mb-8">客服中心</h4>
                       <ul className="space-y-6 text-sm font-light">
                           <li className="flex flex-col gap-2">
-                              <span className="text-white/60 text-xs tracking-widest uppercase">Enquiries</span>
+                              <span className="text-white/60 text-xs tracking-widest uppercase">联系与咨询</span>
                               <a href="https://wa.me/60186667116?text=Hi%2C%20I'm%20interested%20to%20know%20more%20about%20NovaHaus%20Property%20Management%20Services." target="_blank" rel="noopener noreferrer" className="text-lg hover:text-[#ead7c7] transition-colors duration-300">Eric: 018-6667116</a>
                               <a href="https://wa.me/601137830010?text=Hi%2C%20I'm%20interested%20to%20know%20more%20about%20NovaHaus%20Property%20Management%20Services." target="_blank" rel="noopener noreferrer" className="text-lg hover:text-[#ead7c7] transition-colors duration-300">Simon: 011-37830010</a>
                           </li>
@@ -214,7 +214,7 @@ export default function Home() {
               
               {/* Bottom Copyright and Legal */}
               <div className="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-light text-white/60">
-                  <p>© {new Date().getFullYear()} NovaHaus Property. All rights reserved.</p>
+                  <p>© {new Date().getFullYear()} NovaHaus Property. 保留所有权利。</p>
               </div>
           </div>
       </footer>
