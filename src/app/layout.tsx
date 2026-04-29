@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "NovaHaus Property Management",
   description: "Founded in 2023 by Eric Ng and Simon Chong, we provide premium, fully furnished student housing in Sunway and Subang. With over 200 satisfied residents, we go beyond accommodation to create secure, designer homes that foster academic success and personal growth.",
   icons: {
-    icon: "/nova-logo.png",
-    apple: "/nova-logo.png",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "NovaHaus Property Management",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     siteName: "NovaHaus Property Management",
     images: [
       {
-        url: "/nova-logo.png",
-        width: 1200,
-        height: 630,
+        url: "/favicon.png",
+        width: 1024,
+        height: 1024,
         alt: "NovaHaus Logo",
       },
     ],
